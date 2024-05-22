@@ -1,0 +1,257 @@
+/*normalization for all browsers*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+/*base styles*/
+html {
+    font-size: 16px; 
+}
+
+body {
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    background:#FFFDD0; 
+}
+/*anchor tag*/
+a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color .2s linear; 
+}
+
+img {
+    display: block; 
+    max-width: 100%; 
+    height: auto;
+}
+/*nav bar*/
+nav {
+   padding: 10px 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #097969;
+   height: 70px;
+}
+
+.logo{
+  color: #fff;
+  display: flex;
+}
+.logo img{
+width: 50px;
+height: 50px;
+}
+
+
+nav ul {
+   display: flex;
+   gap: 30px;
+   list-style-type: none;
+}
+
+nav ul li a {
+   color: white;
+}
+
+.menu-icon {
+   display: none;
+}
+
+@media (max-width: 600px) {
+   nav ul {
+       position: absolute;
+       top: 70px;
+       left: 0;
+       right: 0;
+       flex-direction: column;
+       background: #097969;
+       padding: 20px 0;
+   }
+
+   .menu-icon {
+       display: block;
+   }
+}
+/*main image*/
+.hero-image {
+   position: relative;
+   text-align: center;
+   color: white;
+}
+
+.hero-image img {
+   width: 100%;
+   max-height: 500px;
+}
+
+.hero-image::after {
+   content: "Quality Groceries Delivered to Your Doorstep";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2em;
+   background: rgba(0, 0, 0, 0.5); 
+}
+/*vegetable img*/
+.vegetables {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*dairy img*/
+.dairy {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Vegetables grid styles */
+.vegetables-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 100px;
+   padding: 10px;
+}
+
+.vegetable {
+   background: #fff;
+   padding: 20px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   text-align: center;
+   border: 1px solid #70a800; 
+}
+
+.vegetable img {
+   width: 100%;
+   height: auto;
+}
+
+/* Buy button styles */
+.buy-button {
+   display: inline-block; 
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto; 
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+   background-color: #45a049;
+}
+
+.lists ul,
+.lists ol {
+  list-style: none;
+  padding: 0;
+}
+
+.lists ul li::before {
+  content: "\2022"; 
+  color: #097969; 
+  font-size: 1.5em; 
+  margin-right: 10px;
+}
+
+.lists ol li {
+  counter-increment: my-awesome-counter;
+}
+
+.lists ol li::before {
+  content: counter(my-awesome-counter);
+  color: #097969; /* Color of number */
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+
+.footer {
+   background-color:#097969;
+   color: #fff;
+   padding: 60px 0;
+ }
+ 
+ .footer-container {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .footer-section {
+   width: 30%;
+ }
+ 
+ .footer-section h4 {
+   font-size: 18px;
+   margin-bottom: 20px;
+ }
+ 
+ .footer-section p {
+   margin-bottom: 10px;
+ }
+ 
+ .footer-links li {
+   list-style: none;
+ }
+ 
+ .footer-links li a {
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ .social-links li {
+   list-style: none;
+   display: inline-block;
+   margin-right: 10px;
+ }
+ 
+ .social-links li a {
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ .copyright {
+   text-align: center;
+   margin-top: 20px;
+ }
+ 
+ .copyright p {
+   font-size: 14px;
+ }
+ 

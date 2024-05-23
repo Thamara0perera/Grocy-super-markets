@@ -83,18 +83,18 @@ nav ul li a{
 /*product section*/
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  
   min-height: 100vh;
   background:#FFFDD0;
 }
 
 
 .products-section {
-  width: 700px;
+  width: 500px;
+  height: 550px;
   background: #fff;
-  padding: 20px;
+  padding: 50px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
   margin-bottom: 20px;
 }

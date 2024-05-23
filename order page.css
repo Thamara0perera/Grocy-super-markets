@@ -1,291 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    height: 100%;
-    width: 100%;
-    background:#FFFDD0;
-}
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="order page.css">
 
-nav{
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #097969;
-    position: relative;
-    height: 70px;
-}
+</head>
 
-.logo{
-    color: #fff;
-    display: flex;
-}
-.logo img{
-  width: 50px;
-  height: 50px;
-}
+<body>
+    <!--navigation bar--------------------------------------------------------------------------------------->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/file.png">
+                <h1>Grocy super market</h1>
+            </div>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About</a></li>
+                <li><a href="dairy.html">Diary</a></li>
+                <li><a href="vegetables.html">Vegetable</a></li>
+                <li><a href="cosmetics and skin care.html">skin care and cosmatics</a></li>
+                <li><a href="order page.html">order page</a></li>
+                <li><a href="loyalty .html">loyalty page</a></li>
+            </ul>
+        </nav>
+        </header>   
 
-nav ul{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
+    <!--navigation bar ends---------------------------------------------------------------------------->
+<section class="full-container">
+    <div class="container">
+        <!-- Products Section -->
+        <div class="products-section">
+            <h3 class="title">Products</h3>
+            <div class="product">
+                <img src="images/Pic914043.jpg" alt="Onion">
+                <div class="product-info">
+                    <span>Onion</span>
+                    <span>R.s 50/100g</span>
+                    <input type="number" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Pic914015.jpg" alt="Garlic">
+                <div class="product-info">
+                    <span>Garlic</span>
+                    <span>R.s/100g</span>
+                    <input type="number" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Pic915014.jpg" alt="potatoe">
+                <div class="product-info">
+                    <span>potatoe</span>
+                    <span>R.s40/100g</span>
+                    <input type="number" min="1" value="1">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    <div class="container">
 
-nav ul li{
-    list-style-type: none;
-}
+        <form action="">
 
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
+            <div class="row">
 
-.menu-icon{
-    display: none;
-}
+                <div class="col">
 
-.menu-icon i{
-    color: #fff;
-    font-size: 30px;
-}
+                    <h3 class="title">billing address</h3>
 
-@media (max-width:600px) {
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background: #097969;
-        gap: 0;
-        overflow: hidden;
-    }
-    nav ul li{
-        padding: 20px;
-        padding-top: 0;
-    }
-    .menu-icon{
-        display: block;
-    }
-    #menuList{
-        transition: all 0.5s;
-    }
-}
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="Enter your address">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="Enter your city">
+                    </div>
 
-/*product section*/
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  min-height: 100vh;
-  background:#FFFDD0;
-}
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="Enter your state">
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="enter your zip code">
+                        </div>
+                    </div>
 
+                </div>
 
-.products-section {
-  width: 500px;
-  height: 550px;
-  background: #fff;
-  padding: 50px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-  margin-bottom: 20px;
-}
+                <div class="col">
 
-.products-section .title {
-  font-size: 20px;
-  color: #333;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-}
+                    <h3 class="title">payment</h3>
 
-.product {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="Enter your number">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="Enter Experation month">
+                    </div>
 
-.product img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 1px solid #ccc;
-}
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="Enter exp year">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="Enter cvv">
+                        </div>
+                    </div>
 
-.product-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-  flex-grow: 1;
-  padding-left: 15px;
-}
+                </div>
 
-.product-info span {
-  font-size: 16px;
-  color: #333;
-}
+            </div>
 
-.product-info input[type="number"] {
-  width: 60px;
-  padding: 5px;
-  border: 1px solid #ccc;
-}
+            <input type="submit" value="proceed to checkout" class="submit-btn">
 
-.add-to-cart {
-  padding: 10px 15px;
-  background: #27ae60;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
+        </form>
+</section>
 
-.add-to-cart:hover {
-  background: #2ecc71;
-}
-/*form*/
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:25px;
-  min-height: 100vh;
- 
-}
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: contact@grocysupermarket.com</p>
+                <p>Phone: +1 123-456-7890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                    <li><a href="dairy.html">dairy</a></li>
+                    <li><a href="cosmetics and skin care.html">cosmetics and skincare</a></li>
+                    <li><a href="vegetables.html">vegetables</a></li>
+                    <li><a href="order page.html">order</a></li>
+                    <li><a href="loyalty .html">loyalty</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Grocy Supermarket. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--footer ends-------------------------------------------------------------------------------------------------------------------------->
+</body>
 
-.container form{
-  padding:20px;
-  width:700px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
-}
-
-.container form .row{
-  display: flex;
-  flex-wrap: wrap;
-  gap:15px;
-}
-
-.container form .row .col{
-  flex:1 1 250px;
-}
-
-.container form .row .col .title{
-  font-size: 20px;
-  color:#333;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.container form .row .col .inputBox{
-  margin:15px 0;
-}
-
-.container form .row .col .inputBox span{
-  margin-bottom: 10px;
-  display: block;
-}
-
-.container form .row .col .inputBox input{
-  width: 100%;
-  border:1px solid #ccc;
-  padding:10px 15px;
-  font-size: 15px;
-  text-transform: none;
-}
-
-.container form .row .col .inputBox input:focus{
-  border:1px solid #000;
-}
-
-.container form .row .col .flex{
-  display: flex;
-  gap:15px;
-}
-
-.container form .row .col .flex .inputBox{
-  margin-top: 5px;
-}
-
-.container form .row .col .inputBox img{
-  height: 34px;
-  margin-top: 5px;
-  filter: drop-shadow(0 0 1px #000);
-}
-
-.container form .submit-btn{
-  width: 100%;
-  padding:12px;
-  font-size: 17px;
-  background: #27ae60;
-  color:#fff;
-  margin-top: 5px;
-  cursor: pointer;
-}
-
-.container form .submit-btn:hover{
-  background: #2ecc71;
-}
-
-.footer {
-  background-color:#097969;
-  color: #fff;
-  width: 100%;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  
- 
-}
-
-.footer-section {
-  width: 30%;
-}
-
-.footer-section h4 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.footer-section p {
-  margin-bottom: 10px;
-}
-
-.footer-links li {
-  list-style: none;
-}
-
-.footer-links li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.social-links li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-links li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.copyright {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.copyright p {
-  font-size: 14px;
-}
+</html>

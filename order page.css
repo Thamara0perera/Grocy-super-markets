@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background:#FFFDD0;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #097969;
+    position: relative;
+    height: 70px;
+}
+
+.logo{
+    color: #fff;
+    display: flex;
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #097969;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+/*product section*/
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+  background:#FFFDD0;
+}
+
+
+.products-section {
+  width: 500px;
+  height: 550px;
+  background: #fff;
+  padding: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  margin-bottom: 20px;
+}
+
+.products-section .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.product-info span {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-info input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-to-cart {
+  padding: 10px 15px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background: #2ecc71;
+}
+/*form*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+ 
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #2ecc71;
+}
+
+
+.footer {
+  background-color:#097969;
+  color: #fff;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  
+ 
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyright p {
+  font-size: 14px;
+}
